@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Categorias</title>
+</head>
+<body>
+{% extends 'base/plantillabase.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="container">
+
+<a href="{% url 'Productos:nuevoRegistroc' %}" class="btn mb-3"> Registrar Categorias</a>
+<div>
+
+{% include 'tablas/infocategorias.html' %}
+
+
+{% endblock %}
+
+
+
+</body>
+</html>

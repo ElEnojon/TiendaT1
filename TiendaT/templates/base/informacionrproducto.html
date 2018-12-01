@@ -1,0 +1,8 @@
+{% for Productos in Productos %}
+<p>{{Productos.nomProducto}}
+{{Productos.descripcion}}
+{{Productos.costo}}</p>
+
+{% empty %}
+<p>no hay productos</p>
+{% endfor %}

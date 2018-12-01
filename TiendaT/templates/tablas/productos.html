@@ -1,0 +1,11 @@
+{% extends 'base/plantillabase.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div id="container">
+
+<a href="{% url 'Productos:nuevoRegistro' %}" class="btn mb-3"> Registrar Productos</a>
+{% include 'tablas/infoproducto.html' %}	
+</div>
+
+{% endblock %}

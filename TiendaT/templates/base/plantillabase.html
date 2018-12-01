@@ -1,0 +1,20 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Tienda {% endblock %}</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+<body class="bg-dark">
+
+	{% block header %}
+	<header>{% include 'tablas/nav.html' %}</header>
+	{% endblock %}
+
+	<div>{% block content %}{% endblock %}</div>
+
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
